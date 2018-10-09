@@ -1,7 +1,9 @@
 
 def roll_call_dwarves(names)
   names.each_with_index do |name, index|
-    puts "#{index + 1}. #{name}"
+    if index < names.length / 2 
+      puts "#{index + 1}. #{name}"
+    end
   end
 end
 
@@ -33,4 +35,14 @@ def find_the_cheese(foods)
     end
   end
   return nil 
+end
+
+def words_with_b(words)
+  words_b = []
+  words.each do |word| 
+    if word[0] == "b"
+      words_b << word 
+    end
+  end
+  return words_b 
 end

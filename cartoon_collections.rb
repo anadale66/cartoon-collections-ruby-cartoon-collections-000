@@ -1,7 +1,7 @@
 
 def roll_call_dwarves(names)
   names.each_with_index do |name, index|
-    if index < names.length / 2 
+    if index > names.length / 2 
       puts "#{index + 1}. #{name}"
     end
   end
